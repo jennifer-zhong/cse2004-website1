@@ -1,0 +1,393 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: #fff8f2;
+  color: #4a332c;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+nav {
+  background-color: #4a332c;
+  color: white;
+  padding: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  opacity: 95%;
+  top: 0;
+  z-index: 10;
+}
+
+nav > a {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  padding: 6px 10px;
+  border-radius: 25px;
+  transition: all .3s ease;
+  font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.nav-links a:hover {
+  background-color: #eb9563;
+}
+
+header {
+  position: relative;
+  min-height: 600px;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+  background-color: #4a332c;
+}
+
+.hero-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+}
+
+header h1, header h2, header p, .hero-button {
+  position: relative;
+  z-index: 1;
+}
+
+header h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 4rem;
+  max-width: 800px;
+  line-height: 1.1;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+
+header h2 {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+header p {
+  max-width: 650px;
+  margin-bottom: 25px;
+  font-size: 1.05rem;
+}
+
+.hero-button {
+  background-color: #e88964;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.hero-button:hover {
+  background-color: white;
+  color: #5a382f;
+}
+
+section {
+  padding: 15px 70px;
+}
+
+.section-label {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #ffece4;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+  background-color: #e88964;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 15px;
+}
+
+#ingredients ul {
+  list-style: none;
+  margin-top: 15px;
+}
+
+h3 {
+  font-family: Georgia, serif;
+  color: #765044;
+  margin: 25px 0 10px;
+}
+
+#ingredients li {
+  background-color: white;
+  padding: 12px 15px;
+  margin-bottom: 8px;
+  border: 1px solid #e2b195;
+  border-radius: 7px;
+  transition: 0.2s;
+}
+
+.ingredient-checkbox {
+  margin-right: 10px;
+  accent-color: #e88964;
+}
+
+#ingredients li.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.progress-bar {
+  background-color: white;
+  padding: 12px 15px;
+  margin: 20px 0;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#directions ol {
+  padding-left: 25px;
+}
+
+#directions li {
+  margin-bottom: 12px;
+  padding-left: 5px;
+}
+
+#directions li::marker {
+  color: #d96f4f;
+  font-weight: bold;
+}
+
+#timer {
+  text-align: center;
+  background-color: #ffe7d1;
+  border-radius: 20px;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-bottom: 20px;
+}
+
+#timer-display {
+  font-family: Georgia, serif;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #4a332c;
+  margin: 15px 0;
+}
+
+#timer button {
+  border: none;
+  background-color: #e88964;
+  color: white;
+  padding: 10px 15px;
+  margin: 4px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+#timer button:hover{
+  background-color: #4a332c;
+}
+
+table {
+  margin: 0 auto;
+}
+#details th,#details td {
+  padding: 15px;
+  border: 1px solid #e2b195;
+  text-align: left;
+  background-color: white;
+}
+
+#details th {
+  background-color: #f5c4aa;
+}
+
+.recipe-tips ul {
+  padding-left: 20px;
+}
+
+.recipe-tips li {
+  margin-bottom: 10px;
+}
+
+.photo-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.photo-gallery img {
+  flex: 1 1 200px;
+  width: 200px;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px #d9c2b7;
+  transition: 0.3s;
+}
+
+.photo-gallery img:hover {
+  transform: translateY(-5px);
+}
+
+form {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input, form select, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #e2b195;
+  border-radius: 5px;
+  background-color: #fffaf7;
+}
+
+form button {
+  border: none;
+  background-color: #e88964;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #4a332c;
+}
+
+footer{
+  background-color: #4a332c;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  font-size: .9rem;
+}
+
+@media (max-width: 600px) {
+  nav {
+    padding: 12px;
+    padding-left: 20px;
+    gap: 8px;
+    background-color: #4a332c;
+  }
+
+  nav > a {
+    font-size: 1.1rem;
+  }
+
+  .nav-links {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+  }
+
+  .nav-links a {
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 5px 2px;
+  }
+
+  header {
+    min-height: 500px;
+    padding: 40px 20px;
+  }
+
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  header h2 {
+    font-size: 1rem;
+  }
+
+  header p {
+    font-size: 0.95rem;
+  }
+
+  section {
+    padding: 25px 20px;
+  }
+
+  .section-label {
+    font-size: 1.6rem;
+    padding: 8px 15px;
+  }
+
+  #timer {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #timer-display {
+    font-size: 2.5rem;
+  }
+
+  #timer button {
+    padding: 10px 12px;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  #details th,
+  #details td {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .photo-gallery {
+    flex-direction: column;
+  }
+
+  .photo-gallery img {
+    width: 100%;
+  }
+
+  form button {
+    width: 100%;
+  }
+}
